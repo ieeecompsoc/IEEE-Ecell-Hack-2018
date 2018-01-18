@@ -29,7 +29,26 @@ main .head-panel {
     font-weight: bolder;
     color: white; }
   main .head-panel .head-panel-register button {
-    margin: 0 auto;
+    margin: 2em auto;
     padding: 12px 40px; }
+main .about-panel {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/AboutUS.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3em 0; }
+  main .about-panel .about-panel-darkerbg {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 auto; }
+    main .about-panel .about-panel-darkerbg .about-panel-title {
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center; }
+    main .about-panel .about-panel-darkerbg .about-panel-desc {
+      color: white;
+      margin: 0 auto; }
+      main .about-panel .about-panel-darkerbg .about-panel-desc p {
+        text-align: justify;
+        margin: 0; }
 
 /*# sourceMappingURL=index.css.map */

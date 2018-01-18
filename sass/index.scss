@@ -44,8 +44,32 @@ main {
 		}
 		.head-panel-register {
 			button {
-				margin: 0 auto;
+				margin: 2em auto;
 				padding: 12px 40px;
+			}
+		}
+	}
+	.about-panel {
+		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/AboutUS.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 3em 0;
+		.about-panel-darkerbg {
+			background: rgba(0,0,0,0.5);
+			margin: 0 auto;
+			.about-panel-title {
+				color: white;
+				font-size: 3em;
+				font-weight: bold;
+				text-align: center;
+			}
+			.about-panel-desc {				
+				color: white;
+				margin: 0 auto;
+				p {
+					text-align: justify;
+					margin: 0;
+				}	
 			}
 		}
 	}
