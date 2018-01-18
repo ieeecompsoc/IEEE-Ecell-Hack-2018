@@ -1,0 +1,35 @@
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto; }
+
+header nav {
+  border-width: 5px;
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-image: linear-gradient(to right, #006687, #57B847 110%);
+  border-image-slice: 2; }
+  header nav .navbar-nav {
+    margin: 0 auto; }
+    header nav .navbar-nav .nav-item .nav-link {
+      color: white; }
+
+main .container-fluid {
+  padding: 0; }
+main .head-panel {
+  padding-top: 2rem;
+  padding-bottom: 4rem; }
+  main .head-panel .head-panel-logos .col {
+    text-align: center; }
+  main .head-panel .head-panel-headings .head-panel-title {
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+    color: white; }
+  main .head-panel .head-panel-register button {
+    margin: 0 auto;
+    padding: 12px 40px; }
+
+/*# sourceMappingURL=index.css.map */
