@@ -53,7 +53,7 @@ main {
 			z-index: -50;
 			background: #343a40;
 			position: absolute;
-			height: 100%;
+			height: 80%;
 			width: 100%;
 			canvas {
 				// height: initial !important;
@@ -63,8 +63,19 @@ main {
 		padding-bottom: 4rem;
 		.head-panel-logos {
 			padding-top: 2em;
+			padding-bottom: 2em;
 			.col {
 				text-align: center;
+				a {
+					#ieeelogo {
+						height: 120px;
+						width: 150px;
+					}
+					#ecelllogo {
+						height: 120px;
+						width: 170px;
+					}
+				}
 			}
 		}
 		.head-panel-headings {
@@ -80,14 +91,17 @@ main {
 			button {
 				margin: 2em auto;
 				padding: 12px 40px;
+				background: $ieee-blue;
+				border-color: $ieee-blue;
 			}
 		}
 	}
 	#about-panel {
-		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/AboutUS.jpg');
-		background-size: cover;
-		background-position: center;
-		padding: 3em 0;
+		// background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/AboutUS.jpg');
+		// background-size: cover;
+		// background-position: center;
+		padding: 3em 0 3em 0;
+		margin-top: 3em;
 		.about-panel-darkerbg {
 			background: rgba(0,0,0,0.5);
 			margin: 0 auto;
@@ -124,6 +138,10 @@ main {
 		border-style: solid;
 		position: absolute;
 		left: 0;
+		@media only screen and (max-width: 768px) {
+			left: initial;
+			right: 0;
+		}
 	}
 	.section-design-green {
 		border-width: 0px 0px 80px 700px;

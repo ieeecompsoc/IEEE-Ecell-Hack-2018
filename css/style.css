@@ -1,7 +1,7 @@
 body {
     margin: 0;
 }
-.contact-panel {
+#contact-panel {
     margin-top: 5em;
     background-color: rgb(58, 58, 58);
     padding-top: 2em;
