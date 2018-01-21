@@ -66,7 +66,15 @@ main {
       padding: 12px 40px;
       background: #006790;
       border-color: #006790; }
+    @media only screen and (max-width: 768px) {
+      main #head-panel {
+        padding-bottom: 0px; }
+        main #head-panel #particles-js {
+          height: 100%; } }
   main #about-panel {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+    background-size: cover;
+    background-position: center;
     padding: 3em 0 3em 0;
     margin-top: 3em; }
     main #about-panel .about-panel-darkerbg {
@@ -84,6 +92,9 @@ main {
         main #about-panel .about-panel-darkerbg .about-panel-desc p {
           text-align: justify;
           margin: 0; }
+    @media only screen and (max-width: 768px) {
+      main #about-panel {
+        margin-top: 0; } }
   main #timeline-panel {
     padding: 3em 0; }
     main #timeline-panel #timeline-panel-title {
@@ -98,7 +109,7 @@ main {
     border-style: solid;
     position: absolute;
     left: 0; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 700px) {
       main .section-design-blue {
         left: initial;
         right: 0; } }

@@ -48,6 +48,7 @@ main {
 		padding: 0;
 	}
 	#head-panel {
+		padding-bottom: 4rem;
 		#particles-js {
 			padding-top: 2em;
 			z-index: -50;
@@ -60,7 +61,6 @@ main {
 				// width: initial !important;
 			}
 		}
-		padding-bottom: 4rem;
 		.head-panel-logos {
 			padding-top: 2em;
 			padding-bottom: 2em;
@@ -95,11 +95,17 @@ main {
 				border-color: $ieee-blue;
 			}
 		}
+		@media only screen and (max-width: 768px) {
+			padding-bottom: 0px;
+			#particles-js {
+				height: 100%; 
+			}
+		}
 	}
 	#about-panel {
-		// background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/AboutUS.jpg');
-		// background-size: cover;
-		// background-position: center;
+		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('');
+		background-size: cover;
+		background-position: center;
 		padding: 3em 0 3em 0;
 		margin-top: 3em;
 		.about-panel-darkerbg {
@@ -121,6 +127,9 @@ main {
 				}	
 			}
 		}
+		@media only screen and (max-width: 768px) {
+			margin-top: 0;
+		}
 	}
 	#timeline-panel {
 		padding: 3em 0;
@@ -138,7 +147,7 @@ main {
 		border-style: solid;
 		position: absolute;
 		left: 0;
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: 700px) {
 			left: initial;
 			right: 0;
 		}
