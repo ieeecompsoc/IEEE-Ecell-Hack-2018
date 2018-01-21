@@ -6,8 +6,8 @@ $('.about-parallax-window').parallax({
 	imageSrc: 'images/AboutUS.jpg',
 	speed: 0.2,
 });
-$('.faq-parallax-window').parallax({
-	imageSrc: 'images/FAQs.jpg',
-	speed: 0.2,
-});
+// $('.faq-parallax-window').parallax({
+// 	imageSrc: 'images/FAQs.jpg',
+// 	speed: 0.2,
+// });
 
