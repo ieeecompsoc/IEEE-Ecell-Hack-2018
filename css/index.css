@@ -1,6 +1,10 @@
 body {
   overflow-x: hidden !important;
-  overflow-y: auto; }
+  overflow-y: auto;
+  font-family: sans-serif !important; }
+
+.row {
+  margin: 0; }
 
 header nav {
   border-width: 5px;
@@ -42,6 +46,7 @@ main .about-panel {
     main .about-panel .about-panel-darkerbg .about-panel-title {
       color: white;
       font-size: 3em;
+      margin-bottom: 1em;
       font-weight: bold;
       text-align: center; }
     main .about-panel .about-panel-darkerbg .about-panel-desc {
@@ -50,5 +55,41 @@ main .about-panel {
       main .about-panel .about-panel-darkerbg .about-panel-desc p {
         text-align: justify;
         margin: 0; }
+main .timeline-panel {
+  padding: 3em 0; }
+  main .timeline-panel #timeline-panel-title {
+    color: #00B939;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold; }
+main .section-design-blue {
+  border-width: 0px 700px 80px 0px;
+  border-color: transparent transparent #006790 transparent;
+  width: 50%;
+  border-style: solid;
+  position: absolute;
+  left: 0; }
+main .section-design-green {
+  border-width: 0px 0px 80px 700px;
+  border-color: transparent transparent #00B939 transparent;
+  max-width: 50%;
+  width: 50%;
+  border-style: solid;
+  position: absolute;
+  right: 0; }
+main .rules-panel {
+  color: #333;
+  margin-top: 8em; }
+  main .rules-panel .rules-panel-title {
+    font-size: 4em;
+    color: #006790;
+    text-align: center; }
+  main .rules-panel .rule {
+    margin-top: 2em; }
+    main .rules-panel .rule .rules-heading {
+      color: #00B939;
+      font-size: 1.5em;
+      margin-bottom: 0.2em;
+      font-weight: bold; }
 
 /*# sourceMappingURL=index.css.map */
