@@ -6,12 +6,14 @@ body {
 	overflow-x: hidden !important;
 	overflow-y: auto; 
 	font-family: sans-serif !important;
+	position: relative;
 }
 .row {
 	margin: 0;
 }
 header {
 	nav {
+		padding-top: 0px !important;
 		border-width: 5px;
 		border-style: solid;
 		border-top: 0px;
@@ -19,24 +21,48 @@ header {
 		border-right: 0px;
 		border-image: linear-gradient(to right, #006687, #57B847 110%);
 		border-image-slice: 2;
+		transition: all 0.4s ease;
 		.navbar-nav {
 			margin: 0 auto;
 			.nav-item {
 				.nav-link {
 					color: white;
+					border-top: 5px solid #343A40;
+					&.active {
+						border-width: 5px;
+						border-style: solid;
+						border-bottom: 0px;
+						border-left: 0px;
+						border-right: 0px;
+						border-image: linear-gradient(to right, #006687, #57B847 110%);
+						border-image-slice: 2;
+					}
 				}
 			}
 		}
 	}
 }
 main {
+	padding-top: 3em;
 	.container-fluid {
 		padding: 0;
 	}
-	.head-panel {
-		padding-top: 2rem;
+	#head-panel {
+		#particles-js {
+			padding-top: 2em;
+			z-index: -50;
+			background: #343a40;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			canvas {
+				// height: initial !important;
+				// width: initial !important;
+			}
+		}
 		padding-bottom: 4rem;
 		.head-panel-logos {
+			padding-top: 2em;
 			.col {
 				text-align: center;
 			}
@@ -57,7 +83,7 @@ main {
 			}
 		}
 	}
-	.about-panel {
+	#about-panel {
 		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/AboutUS.jpg');
 		background-size: cover;
 		background-position: center;
@@ -82,7 +108,7 @@ main {
 			}
 		}
 	}
-	.timeline-panel {
+	#timeline-panel {
 		padding: 3em 0;
 		#timeline-panel-title {
 			color: $ecell-green;
@@ -108,7 +134,7 @@ main {
 		position: absolute;
 		right: 0;
 	}
-	.rules-panel {
+	#rules-panel {
 		color: #333;
 		margin-top: 8em;
 		.rules-panel-title {

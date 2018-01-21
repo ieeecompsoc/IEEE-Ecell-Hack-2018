@@ -1,95 +1,117 @@
 body {
   overflow-x: hidden !important;
   overflow-y: auto;
-  font-family: sans-serif !important; }
+  font-family: sans-serif !important;
+  position: relative; }
 
 .row {
   margin: 0; }
 
 header nav {
+  padding-top: 0px !important;
   border-width: 5px;
   border-style: solid;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-image: linear-gradient(to right, #006687, #57B847 110%);
-  border-image-slice: 2; }
+  border-image-slice: 2;
+  transition: all 0.4s ease; }
   header nav .navbar-nav {
     margin: 0 auto; }
     header nav .navbar-nav .nav-item .nav-link {
-      color: white; }
+      color: white;
+      border-top: 5px solid #343A40; }
+      header nav .navbar-nav .nav-item .nav-link.active {
+        border-width: 5px;
+        border-style: solid;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-image: linear-gradient(to right, #006687, #57B847 110%);
+        border-image-slice: 2; }
 
-main .container-fluid {
-  padding: 0; }
-main .head-panel {
-  padding-top: 2rem;
-  padding-bottom: 4rem; }
-  main .head-panel .head-panel-logos .col {
-    text-align: center; }
-  main .head-panel .head-panel-headings .head-panel-title {
-    margin: 0 auto;
-    font-size: 4em;
-    text-align: center;
-    font-weight: bolder;
-    color: white; }
-  main .head-panel .head-panel-register button {
-    margin: 2em auto;
-    padding: 12px 40px; }
-main .about-panel {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/AboutUS.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 3em 0; }
-  main .about-panel .about-panel-darkerbg {
-    background: rgba(0, 0, 0, 0.5);
-    margin: 0 auto; }
-    main .about-panel .about-panel-darkerbg .about-panel-title {
-      color: white;
-      font-size: 3em;
-      margin-bottom: 1em;
-      font-weight: bold;
-      text-align: center; }
-    main .about-panel .about-panel-darkerbg .about-panel-desc {
-      color: white;
+main {
+  padding-top: 3em; }
+  main .container-fluid {
+    padding: 0; }
+  main #head-panel {
+    padding-bottom: 4rem; }
+    main #head-panel #particles-js {
+      padding-top: 2em;
+      z-index: -50;
+      background: #343a40;
+      position: absolute;
+      height: 100%;
+      width: 100%; }
+    main #head-panel .head-panel-logos {
+      padding-top: 2em; }
+      main #head-panel .head-panel-logos .col {
+        text-align: center; }
+    main #head-panel .head-panel-headings .head-panel-title {
+      margin: 0 auto;
+      font-size: 4em;
+      text-align: center;
+      font-weight: bolder;
+      color: white; }
+    main #head-panel .head-panel-register button {
+      margin: 2em auto;
+      padding: 12px 40px; }
+  main #about-panel {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/AboutUS.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0; }
+    main #about-panel .about-panel-darkerbg {
+      background: rgba(0, 0, 0, 0.5);
       margin: 0 auto; }
-      main .about-panel .about-panel-darkerbg .about-panel-desc p {
-        text-align: justify;
-        margin: 0; }
-main .timeline-panel {
-  padding: 3em 0; }
-  main .timeline-panel #timeline-panel-title {
-    color: #00B939;
-    text-align: center;
-    font-size: 4em;
-    font-weight: bold; }
-main .section-design-blue {
-  border-width: 0px 700px 80px 0px;
-  border-color: transparent transparent #006790 transparent;
-  width: 50%;
-  border-style: solid;
-  position: absolute;
-  left: 0; }
-main .section-design-green {
-  border-width: 0px 0px 80px 700px;
-  border-color: transparent transparent #00B939 transparent;
-  max-width: 50%;
-  width: 50%;
-  border-style: solid;
-  position: absolute;
-  right: 0; }
-main .rules-panel {
-  color: #333;
-  margin-top: 8em; }
-  main .rules-panel .rules-panel-title {
-    font-size: 4em;
-    color: #006790;
-    text-align: center; }
-  main .rules-panel .rule {
-    margin-top: 2em; }
-    main .rules-panel .rule .rules-heading {
+      main #about-panel .about-panel-darkerbg .about-panel-title {
+        color: white;
+        font-size: 3em;
+        margin-bottom: 1em;
+        font-weight: bold;
+        text-align: center; }
+      main #about-panel .about-panel-darkerbg .about-panel-desc {
+        color: white;
+        margin: 0 auto; }
+        main #about-panel .about-panel-darkerbg .about-panel-desc p {
+          text-align: justify;
+          margin: 0; }
+  main #timeline-panel {
+    padding: 3em 0; }
+    main #timeline-panel #timeline-panel-title {
       color: #00B939;
-      font-size: 1.5em;
-      margin-bottom: 0.2em;
+      text-align: center;
+      font-size: 4em;
       font-weight: bold; }
+  main .section-design-blue {
+    border-width: 0px 700px 80px 0px;
+    border-color: transparent transparent #006790 transparent;
+    width: 50%;
+    border-style: solid;
+    position: absolute;
+    left: 0; }
+  main .section-design-green {
+    border-width: 0px 0px 80px 700px;
+    border-color: transparent transparent #00B939 transparent;
+    max-width: 50%;
+    width: 50%;
+    border-style: solid;
+    position: absolute;
+    right: 0; }
+  main #rules-panel {
+    color: #333;
+    margin-top: 8em; }
+    main #rules-panel .rules-panel-title {
+      font-size: 4em;
+      color: #006790;
+      text-align: center; }
+    main #rules-panel .rule {
+      margin-top: 2em; }
+      main #rules-panel .rule .rules-heading {
+        color: #00B939;
+        font-size: 1.5em;
+        margin-bottom: 0.2em;
+        font-weight: bold; }
 
 /*# sourceMappingURL=index.css.map */
