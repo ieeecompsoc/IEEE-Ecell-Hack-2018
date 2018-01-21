@@ -30,6 +30,9 @@ header nav {
         border-right: 0px;
         border-image: linear-gradient(to right, #006687, #57B847 110%);
         border-image-slice: 2; }
+@media only screen and (max-width: 991px) {
+  header nav .navbar-nav .nav-item .nav-link.active {
+    border: 0; } }
 
 main {
   padding-top: 3em; }

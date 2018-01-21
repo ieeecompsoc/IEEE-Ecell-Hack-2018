@@ -41,6 +41,19 @@ header {
 			}
 		}
 	}
+	@media only screen and (max-width: 991px) {
+		nav {
+			.navbar-nav {
+				.nav-item {
+					.nav-link {
+						&.active{
+							border: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 main {
 	padding-top: 3em;
