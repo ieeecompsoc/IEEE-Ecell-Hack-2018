@@ -27,6 +27,12 @@ body {
     width: 100%;
     background-color: white;
     padding: 1em;
+    cursor: pointer;
+}
+
+.faq-answer {
+    margin: 1em;
+    color: white;
 }
 
 #contact-panel {
