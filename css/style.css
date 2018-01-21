@@ -2,18 +2,19 @@ body {
     margin: 0;
 }
 
+
 #faq-panel {
     margin-top: 5em;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/FAQs.jpg') center  center no-repeat;
-    background-size: cover;
+/*    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/FAQs.jpg') center  center no-repeat;
+    background-size: cover;*/
     padding-top: 2em;
     padding-bottom: 4em;
 }
 
 .faq-panel-title {
     font-size: 4em;
-    color: white;
+    color: #00B939;
     text-align: center;
 }
 

@@ -30,6 +30,9 @@ header nav {
         border-right: 0px;
         border-image: linear-gradient(to right, #006687, #57B847 110%);
         border-image-slice: 2; }
+@media only screen and (max-width: 991px) {
+  header nav .navbar-nav .nav-item .nav-link.active {
+    border: 0; } }
 
 main {
   padding-top: 3em; }
@@ -42,12 +45,19 @@ main {
       z-index: -50;
       background: #343a40;
       position: absolute;
-      height: 100%;
+      height: 80%;
       width: 100%; }
     main #head-panel .head-panel-logos {
-      padding-top: 2em; }
+      padding-top: 2em;
+      padding-bottom: 2em; }
       main #head-panel .head-panel-logos .col {
         text-align: center; }
+        main #head-panel .head-panel-logos .col a #ieeelogo {
+          height: 120px;
+          width: 150px; }
+        main #head-panel .head-panel-logos .col a #ecelllogo {
+          height: 120px;
+          width: 170px; }
     main #head-panel .head-panel-headings .head-panel-title {
       margin: 0 auto;
       font-size: 4em;
@@ -56,12 +66,20 @@ main {
       color: white; }
     main #head-panel .head-panel-register button {
       margin: 2em auto;
-      padding: 12px 40px; }
+      padding: 12px 40px;
+      background: #006790;
+      border-color: #006790; }
+    @media only screen and (max-width: 768px) {
+      main #head-panel {
+        padding-bottom: 0px; }
+        main #head-panel #particles-js {
+          height: 100%; } }
   main #about-panel {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/AboutUS.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
     background-size: cover;
     background-position: center;
-    padding: 3em 0; }
+    padding: 3em 0 3em 0;
+    margin-top: 3em; }
     main #about-panel .about-panel-darkerbg {
       background: rgba(0, 0, 0, 0.5);
       margin: 0 auto; }
@@ -77,6 +95,9 @@ main {
         main #about-panel .about-panel-darkerbg .about-panel-desc p {
           text-align: justify;
           margin: 0; }
+    @media only screen and (max-width: 768px) {
+      main #about-panel {
+        margin-top: 0; } }
   main #timeline-panel {
     padding: 3em 0; }
     main #timeline-panel #timeline-panel-title {
@@ -91,6 +112,10 @@ main {
     border-style: solid;
     position: absolute;
     left: 0; }
+    @media only screen and (max-width: 700px) {
+      main .section-design-blue {
+        left: initial;
+        right: 0; } }
   main .section-design-green {
     border-width: 0px 0px 80px 700px;
     border-color: transparent transparent #00B939 transparent;
