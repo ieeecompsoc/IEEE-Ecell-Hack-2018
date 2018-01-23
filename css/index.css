@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden !important;
   overflow-y: auto;
-  font-family: sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   position: relative; }
 
 .row {
@@ -16,12 +16,13 @@ header nav {
   border-right: 0px;
   border-image: linear-gradient(to right, #006687, #57B847 110%);
   border-image-slice: 2;
+  background: #1e2024;
   transition: all 0.4s ease; }
   header nav .navbar-nav {
     margin: 0 auto; }
     header nav .navbar-nav .nav-item .nav-link {
       color: white;
-      border-top: 5px solid #343A40; }
+      border-top: 5px solid #1e2024; }
       header nav .navbar-nav .nav-item .nav-link.active {
         border-width: 5px;
         border-style: solid;
@@ -36,18 +37,23 @@ header nav {
 
 main {
   padding-top: 3em; }
+  main .anchor-padding {
+    padding-top: 50px;
+    margin-top: -50px; }
   main .container-fluid {
     padding: 0; }
   main #head-panel {
-    padding-bottom: 4rem; }
+    padding-bottom: 4rem;
+    margin-bottom: 1em; }
     main #head-panel #particles-js {
       padding-top: 2em;
       z-index: -50;
-      background: #343a40;
+      background: #1e2024;
       position: absolute;
-      height: 80%;
+      height: 100%;
       width: 100%; }
     main #head-panel .head-panel-logos {
+      display: none;
       padding-top: 2em;
       padding-bottom: 2em; }
       main #head-panel .head-panel-logos .col {
@@ -58,32 +64,64 @@ main {
         main #head-panel .head-panel-logos .col a #ecelllogo {
           height: 120px;
           width: 170px; }
-    main #head-panel .head-panel-headings .head-panel-title {
-      margin: 0 auto;
-      font-size: 4em;
+    main #head-panel .head-panel-headings {
+      margin-bottom: 6em; }
+      main #head-panel .head-panel-headings .head-panel-title {
+        font-family: 'Russo One', sans-serif;
+        margin: 1em auto;
+        font-size: 8vw;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        margin-bottom: 0.1em;
+        width: 100%; }
+      main #head-panel .head-panel-headings .head-panel-subtitle {
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.9em;
+        width: 100%; }
+    main #head-panel .head-panel-dates {
+      color: white;
+      font-size: 2em;
+      display: block;
       text-align: center;
-      font-weight: bolder;
-      color: white; }
+      font-weight: bold; }
     main #head-panel .head-panel-register button {
       margin: 2em auto;
       padding: 12px 40px;
-      background: #006790;
-      border-color: #006790; }
+      background: #00B939;
+      border-color: #00B939; }
     @media only screen and (max-width: 768px) {
       main #head-panel {
         padding-bottom: 0px; }
         main #head-panel #particles-js {
-          height: 100%; } }
+          height: 70%; }
+        main #head-panel .head-panel-headings .head-panel-title {
+          font-size: 9vw; }
+        main #head-panel .head-panel-headings .head-panel-subtitle {
+          font-size: 0.7em; }
+        main #head-panel .head-panel-dates {
+          font-size: 1.3em; } }
+    @media only screen and (max-width: 450px) {
+      main #head-panel {
+        padding: 3em 0 4em 0; }
+        main #head-panel #particles-js {
+          height: 100%; }
+        main #head-panel .head-panel-headings {
+          padding-top: 3em; } }
   main #about-panel {
+    z-index: -60;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
     background-size: cover;
     background-position: center;
-    padding: 3em 0 3em 0;
-    margin-top: 3em; }
+    padding: 6em 0 3em 0;
+    margin-top: 4rem; }
     main #about-panel .about-panel-darkerbg {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.8);
       margin: 0 auto; }
       main #about-panel .about-panel-darkerbg .about-panel-title {
+        padding-top: 0.5em;
         color: white;
         font-size: 3em;
         margin-bottom: 1em;
@@ -94,17 +132,20 @@ main {
         margin: 0 auto; }
         main #about-panel .about-panel-darkerbg .about-panel-desc p {
           text-align: justify;
-          margin: 0; }
+          margin: 0;
+          line-height: 25px;
+          padding-bottom: 1em; }
     @media only screen and (max-width: 768px) {
       main #about-panel {
         margin-top: 0; } }
   main #timeline-panel {
-    padding: 3em 0; }
+    padding: 5em 0; }
     main #timeline-panel #timeline-panel-title {
       color: #00B939;
       text-align: center;
       font-size: 4em;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 1em; }
   main .section-design-blue {
     border-width: 0px 700px 80px 0px;
     border-color: transparent transparent #006790 transparent;
@@ -126,7 +167,7 @@ main {
     right: 0; }
   main #rules-panel {
     color: #333;
-    margin-top: 8em; }
+    margin-top: 5em; }
     main #rules-panel .rules-panel-title {
       font-size: 4em;
       color: #006790;
