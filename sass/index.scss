@@ -5,7 +5,7 @@ $title-font: 4em;
 body {
 	overflow-x: hidden !important;
 	overflow-y: auto; 
-	font-family: sans-serif !important;
+	font-family: 'Montserrat', sans-serif !important;
 	position: relative;
 }
 .row {
@@ -21,13 +21,14 @@ header {
 		border-right: 0px;
 		border-image: linear-gradient(to right, #006687, #57B847 110%);
 		border-image-slice: 2;
+		background: #1e2024;
 		transition: all 0.4s ease;
 		.navbar-nav {
 			margin: 0 auto;
 			.nav-item {
 				.nav-link {
 					color: white;
-					border-top: 5px solid #343A40;
+					border-top: 5px solid #1e2024;
 					&.active {
 						border-width: 5px;
 						border-style: solid;
@@ -56,25 +57,27 @@ header {
 	}
 }
 main {
+	.anchor-padding {
+		padding-top: 50px;
+		margin-top: -50px;
+	}
 	padding-top: 3em;
 	.container-fluid {
 		padding: 0;
 	}
 	#head-panel {
 		padding-bottom: 4rem;
+		margin-bottom: 1em;
 		#particles-js {
 			padding-top: 2em;
 			z-index: -50;
-			background: #343a40;
+			background: #1e2024;
 			position: absolute;
-			height: 80%;
+			height: 100%;
 			width: 100%;
-			canvas {
-				// height: initial !important;
-				// width: initial !important;
-			}
 		}
 		.head-panel-logos {
+			display: none;
 			padding-top: 2em;
 			padding-bottom: 2em;
 			.col {
@@ -92,39 +95,79 @@ main {
 			}
 		}
 		.head-panel-headings {
+			margin-bottom: 6em;
 			.head-panel-title {
-				margin: 0 auto;
-				font-size: 4em;
+				font-family: 'Russo One', sans-serif;
+				margin: 1em auto;
+				font-size: 8vw;
 				text-align: center;
 				font-weight: bolder;
 				color: white;
+				margin-bottom: 0.1em;
+				width: 100%;
 			}
+			.head-panel-subtitle {
+				color: white;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 0.9em;
+				width: 100%;
+			}
+		}
+		.head-panel-dates {
+			color: white;
+			font-size: 2em;
+			display: block;
+			text-align: center;
+			font-weight: bold;
 		}
 		.head-panel-register {
 			button {
 				margin: 2em auto;
 				padding: 12px 40px;
-				background: $ieee-blue;
-				border-color: $ieee-blue;
+				background: $ecell-green;
+				border-color: $ecell-green;
 			}
 		}
 		@media only screen and (max-width: 768px) {
 			padding-bottom: 0px;
 			#particles-js {
+				height: 70%; 
+			}
+			.head-panel-headings {
+				.head-panel-title {
+					font-size: 9vw;
+				}
+				.head-panel-subtitle {
+					font-size: 0.7em;
+				}
+			}
+			.head-panel-dates {
+				font-size: 1.3em;
+			}
+		}
+		@media only screen and (max-width: 450px) {
+			padding: 3em 0 4em 0; 
+			#particles-js {
 				height: 100%; 
+			}
+			.head-panel-headings {
+				padding-top: 3em;
 			}
 		}
 	}
 	#about-panel {
+		z-index: -60;
 		background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('');
 		background-size: cover;
 		background-position: center;
-		padding: 3em 0 3em 0;
-		margin-top: 3em;
+		padding: 6em 0 3em 0;
+		margin-top: 4rem;
 		.about-panel-darkerbg {
-			background: rgba(0,0,0,0.5);
+			background: rgba(0,0,0,0.8);
 			margin: 0 auto;
 			.about-panel-title {
+				padding-top: 0.5em;
 				color: white;
 				font-size: 3em;
 				margin-bottom: 1em;
@@ -137,6 +180,8 @@ main {
 				p {
 					text-align: justify;
 					margin: 0;
+					line-height: 25px;
+					padding-bottom: 1em;
 				}	
 			}
 		}
@@ -145,12 +190,13 @@ main {
 		}
 	}
 	#timeline-panel {
-		padding: 3em 0;
+		padding: 5em 0;
 		#timeline-panel-title {
 			color: $ecell-green;
 			text-align: center;
 			font-size: $title-font;
 			font-weight: bold;
+			margin-bottom: 1em;
 		}
 	}
 	.section-design-blue {
@@ -176,7 +222,7 @@ main {
 	}
 	#rules-panel {
 		color: #333;
-		margin-top: 8em;
+		margin-top: 5em;
 		.rules-panel-title {
 			font-size: $title-font;
 			color: $ieee-blue;
