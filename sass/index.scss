@@ -123,6 +123,7 @@ main {
 		}
 		.head-panel-register {
 			button {
+				font-family: 'Audiowide', cursive;
 				margin: 2em auto;
 				padding: 12px 40px;
 				background: $ecell-green;
@@ -182,6 +183,9 @@ main {
 					margin: 0;
 					line-height: 25px;
 					padding-bottom: 1em;
+					strong {
+						font-weight: bolder !important;
+					}
 				}	
 			}
 		}

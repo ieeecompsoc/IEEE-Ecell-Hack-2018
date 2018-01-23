@@ -88,6 +88,7 @@ main {
       text-align: center;
       font-weight: bold; }
     main #head-panel .head-panel-register button {
+      font-family: 'Audiowide', cursive;
       margin: 2em auto;
       padding: 12px 40px;
       background: #00B939;
@@ -135,6 +136,8 @@ main {
           margin: 0;
           line-height: 25px;
           padding-bottom: 1em; }
+          main #about-panel .about-panel-darkerbg .about-panel-desc p strong {
+            font-weight: bolder !important; }
     @media only screen and (max-width: 768px) {
       main #about-panel {
         margin-top: 0; } }
