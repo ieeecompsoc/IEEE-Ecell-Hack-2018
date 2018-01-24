@@ -21,8 +21,17 @@ body {
 
 .faq-content-block {
     width: 100%;
-    border: 0.1em solid green;
+    border: 0.1em solid green !important;
     margin-top: 2em;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.card-header > h5 > button, .card-header > h5 > button:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .faq-question {
