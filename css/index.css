@@ -174,7 +174,8 @@ main {
     main #rules-panel .rules-panel-title {
       font-size: 4em;
       color: #006790;
-      text-align: center; }
+      text-align: center;
+      font-weight: bold; }
     main #rules-panel .rule {
       margin-top: 2em; }
       main #rules-panel .rule .rules-heading {
@@ -182,5 +183,18 @@ main {
         font-size: 1.5em;
         margin-bottom: 0.2em;
         font-weight: bold; }
+  main #sponsor-panel {
+    margin-bottom: 1em; }
+    main #sponsor-panel .sponsor-heading {
+      text-align: center;
+      color: #00B939;
+      font-weight: bold;
+      display: block;
+      font-size: 4em; }
+    main #sponsor-panel .sponsors-prime {
+      text-align: center; }
+      main #sponsor-panel .sponsors-prime img {
+        width: 400px;
+        margin: 0 auto; }
 
 /*# sourceMappingURL=index.css.map */

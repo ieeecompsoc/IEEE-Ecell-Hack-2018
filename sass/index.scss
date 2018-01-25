@@ -231,6 +231,7 @@ main {
 			font-size: $title-font;
 			color: $ieee-blue;
 			text-align: center;
+			font-weight: bold;
 		}
 		.rule {
 			margin-top: 2em;
@@ -241,6 +242,24 @@ main {
 				font-weight: bold;
 			}
 
+		}
+	}
+	#sponsor-panel {
+		margin-bottom: 1em;
+		.sponsor-heading {
+			text-align: center;
+			color: $ecell-green;
+			font-weight: bold;
+			display: block;
+			font-size: $title-font;
+		}
+		.sponsors-prime {
+			text-align: center;
+			img {
+				// height: 200px;
+				width: 400px;
+				margin: 0 auto;
+			}
 		}
 	}
 
