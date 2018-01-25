@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-
+/* -------------------------FAQ SECTION ---------------------*/
 #faq-panel {
     margin-top: 5em;
     height: auto;
@@ -29,6 +29,12 @@ body {
     background-color: white;
 }
 
+.card-header > h5 > button {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+}
+
 .card-header > h5 > button, .card-header > h5 > button:hover {
     color: black;
     text-decoration: none;
@@ -46,6 +52,7 @@ body {
     color: white;
 }
 
+/* -------------------------CONTACT SECTION ---------------------*/
 #contact-panel {
     background-color: rgb(58, 58, 58);
     padding-top: 2em;
@@ -78,6 +85,7 @@ body {
     color: rgb(194, 194, 194);
 }
 
+/* -------------------------FOOTER SECTION ---------------------*/
 .footer-panel {
     height: 5vh;
     background-color: black;
