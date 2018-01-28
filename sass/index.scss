@@ -73,7 +73,7 @@ main {
 			z-index: -50;
 			background: #1e2024;
 			position: absolute;
-			height: 100%;
+			height: 101%;
 			width: 100%;
 		}
 		.head-panel-logos {
@@ -82,16 +82,6 @@ main {
 			padding-bottom: 2em;
 			.col {
 				text-align: center;
-				a {
-					#ieeelogo {
-						height: 120px;
-						width: 150px;
-					}
-					#ecelllogo {
-						height: 120px;
-						width: 170px;
-					}
-				}
 			}
 		}
 		.head-panel-headings {
@@ -245,6 +235,7 @@ main {
 		}
 	}
 	#sponsor-panel {
+		margin-top: 0.5em;
 		margin-bottom: 1em;
 		.sponsor-heading {
 			text-align: center;

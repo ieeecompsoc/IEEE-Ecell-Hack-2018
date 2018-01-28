@@ -50,7 +50,7 @@ main {
       z-index: -50;
       background: #1e2024;
       position: absolute;
-      height: 100%;
+      height: 101%;
       width: 100%; }
     main #head-panel .head-panel-logos {
       display: none;
@@ -58,12 +58,6 @@ main {
       padding-bottom: 2em; }
       main #head-panel .head-panel-logos .col {
         text-align: center; }
-        main #head-panel .head-panel-logos .col a #ieeelogo {
-          height: 120px;
-          width: 150px; }
-        main #head-panel .head-panel-logos .col a #ecelllogo {
-          height: 120px;
-          width: 170px; }
     main #head-panel .head-panel-headings {
       margin-bottom: 6em; }
       main #head-panel .head-panel-headings .head-panel-title {
@@ -184,6 +178,7 @@ main {
         margin-bottom: 0.2em;
         font-weight: bold; }
   main #sponsor-panel {
+    margin-top: 0.5em;
     margin-bottom: 1em; }
     main #sponsor-panel .sponsor-heading {
       text-align: center;
