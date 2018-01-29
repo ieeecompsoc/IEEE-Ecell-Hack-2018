@@ -54,6 +54,7 @@ body {
 
 /* -------------------------CONTACT SECTION ---------------------*/
 #contact-panel {
+    margin-top: 2em;
     background-color: rgb(58, 58, 58);
     padding-top: 2em;
     padding-bottom: 5em;

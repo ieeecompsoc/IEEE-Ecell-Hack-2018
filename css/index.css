@@ -188,8 +188,15 @@ main {
       font-size: 4em; }
     main #sponsor-panel .sponsors-prime {
       text-align: center; }
-      main #sponsor-panel .sponsors-prime img {
-        width: 400px;
-        margin: 0 auto; }
+      main #sponsor-panel .sponsors-prime .col-md-6 {
+        margin: auto; }
+        main #sponsor-panel .sponsors-prime .col-md-6 img {
+          width: 400px;
+          margin: 0 auto; }
+    @media only screen and (max-width: 450px) {
+      main #sponsor-panel .sponsors-prime {
+        margin-top: 2em; }
+        main #sponsor-panel .sponsors-prime img {
+          margin-top: 0.5em; } }
 
 /*# sourceMappingURL=index.css.map */
