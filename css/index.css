@@ -61,7 +61,7 @@ main {
     main #head-panel .head-panel-headings {
       margin-bottom: 6em; }
       main #head-panel .head-panel-headings .head-panel-title {
-        font-family: 'Russo One', sans-serif;
+        /* font-family: 'Russo One', sans-serif; */
         margin: 1em auto;
         font-size: 8vw;
         text-align: center;
@@ -73,7 +73,7 @@ main {
         color: white;
         margin: 0 auto;
         text-align: center;
-        font-size: 0.9em;
+        font-size: 1.3em;
         width: 100%; }
     main #head-panel .head-panel-dates {
       color: white;
@@ -95,7 +95,7 @@ main {
         main #head-panel .head-panel-headings .head-panel-title {
           font-size: 9vw; }
         main #head-panel .head-panel-headings .head-panel-subtitle {
-          font-size: 0.7em; }
+          font-size: 0.8em; }
         main #head-panel .head-panel-dates {
           font-size: 1.3em; } }
     @media only screen and (max-width: 450px) {

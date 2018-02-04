@@ -2,6 +2,18 @@ body {
     margin: 0;
 }
 
+/* -------------------------HOME SECTION ---------------------*/
+
+.head-panel-subtitle {
+    font-weight: bold;
+    /* font-size: 1.5em !important; */
+}
+
+.head-panel-dates {
+    font-size: 1.6em !important;
+    font-weight: normal !important;
+}
+
 /* -------------------------FAQ SECTION ---------------------*/
 #faq-panel {
     margin-top: 5em;
