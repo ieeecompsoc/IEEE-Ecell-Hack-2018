@@ -10,8 +10,20 @@ body {
 }
 
 .head-panel-dates {
-    font-size: 1.6em !important;
+    /* font-size: 1.6em !important; */
     font-weight: normal !important;
+}
+
+/* -------------------------ABOUT SECTION ---------------------*/
+
+#about-panel {
+    margin-top: 0 !important;
+}
+
+/* -------------------------RULES SECTION ---------------------*/
+
+#rules-panel {
+    margin-top: 0 !important;
 }
 
 /* -------------------------FAQ SECTION ---------------------*/
@@ -62,6 +74,10 @@ body {
 .faq-answer {
     padding: 1em;
     color: white;
+}
+
+.card-body {
+    line-height: 1.2em;
 }
 /*------------------------- SPONSORS SECTION-------------------- */
 
