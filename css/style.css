@@ -4,6 +4,10 @@ body {
 
 /* -------------------------HOME SECTION ---------------------*/
 
+#head-panel {
+    /* margin-top: 0 !important; */
+    margin-bottom: 0 !important;
+}
 .head-panel-subtitle {
     font-weight: bold;
     /* font-size: 1.5em !important; */
