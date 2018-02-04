@@ -162,8 +162,7 @@ main {
     position: absolute;
     right: 0; }
   main #rules-panel {
-    color: #333;
-    margin-top: 5em; }
+    color: #333; }
     main #rules-panel .rules-panel-title {
       font-size: 4em;
       color: #006790;
