@@ -51,6 +51,11 @@ body {
     padding: 1em;
     color: white;
 }
+/*------------------------- SPONSORS SECTION-------------------- */
+
+.sponsors-prime {
+    margin-top: 3em;
+}
 
 /* -------------------------CONTACT SECTION ---------------------*/
 #contact-panel {
