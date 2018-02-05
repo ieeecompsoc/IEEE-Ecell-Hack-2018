@@ -53,16 +53,19 @@ main {
       height: 100%;
       width: 100%; }
     main #head-panel .head-panel-logos {
-      display: none;
-      padding-top: 2em;
-      padding-bottom: 2em; }
+      padding-top: 1em;}
+    main #head-panel .head-panel-logos div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
       main #head-panel .head-panel-logos .col {
         text-align: center; }
     main #head-panel .head-panel-headings {
-      margin-bottom: 6em; }
+      margin-bottom: 2em; }
       main #head-panel .head-panel-headings .head-panel-title {
         /* font-family: 'Russo One', sans-serif; */
-        margin: 1em auto;
+        /* margin: 1em auto; */
         font-size: 8vw;
         text-align: center;
         font-weight: bolder;
@@ -71,13 +74,12 @@ main {
         width: 100%; }
       main #head-panel .head-panel-headings .head-panel-subtitle {
         color: white;
-        margin: 0 auto;
         text-align: center;
         font-size: 1.3em;
         width: 100%; }
     main #head-panel .head-panel-dates {
       color: white;
-      font-size: 2em;
+      font-size: 1.5em;
       display: block;
       text-align: center;
       font-weight: bold; }
@@ -91,20 +93,26 @@ main {
       main #head-panel {
         padding-bottom: 0px; }
         main #head-panel #particles-js {
-          height: 70%; }
+          height: 100%; }
         main #head-panel .head-panel-headings .head-panel-title {
           font-size: 9vw; }
         main #head-panel .head-panel-headings .head-panel-subtitle {
           font-size: 0.8em; }
         main #head-panel .head-panel-dates {
-          font-size: 1.3em; } }
+          font-size: 1.3em; }
+          main #head-panel .head-panel-logos div img {
+            width: 30%;
+          } }
     @media only screen and (max-width: 450px) {
       main #head-panel {
         padding: 3em 0 4em 0; }
         main #head-panel #particles-js {
           height: 100%; }
         main #head-panel .head-panel-headings {
-          padding-top: 3em; } }
+          padding-top: 1em; }
+        main #head-panel .head-panel-logos div img {
+          width: 30%;
+        } }
   main #about-panel {
     z-index: -60;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
