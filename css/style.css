@@ -115,6 +115,10 @@ body {
     margin-top: 3em;
 }
 
+.sponsors-prime div a img {
+    max-width: 80%;
+}
+
 /* -------------------------CONTACT SECTION ---------------------*/
 #contact-panel {
     margin-top: 2em;
