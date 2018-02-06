@@ -215,4 +215,14 @@ main {
   margin-top: 2em;
   font-weight: bold;
 }
+  
+main #sponsor-panel .sponsors-prime .col-lg-2 {
+  margin: auto; }
+
+@media only screen and (max-width: 450px) {
+  .sponsors-prime {
+    margin: 0;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
