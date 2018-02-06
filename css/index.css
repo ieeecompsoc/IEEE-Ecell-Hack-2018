@@ -206,4 +206,13 @@ main {
         main #sponsor-panel .sponsors-prime img {
           margin-top: 0.5em; } }
 
+#sponsors-media {
+  text-align: center;
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
+  color: #006790;
+  margin-top: 2em;
+  font-weight: bold;
+}
 /*# sourceMappingURL=index.css.map */
