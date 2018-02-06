@@ -44,6 +44,43 @@ body {
     font-weight: bold;
 }
 
+/* -------------------------THEME SECTION ---------------------*/
+
+#theme-panel {
+    height: auto;
+    background: linear-gradient(rgba(102, 102, 102, 0.8), rgba(0, 0, 0, 0.8)), url('../images/fintech.jpg') center  center no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4em 0 3em 0;
+    margin-top: 0; 
+}
+
+.theme-panel-darkerbg {
+    background: rgba(68, 68, 68, 0.4);
+    margin: 0 auto;
+}
+
+.theme-panel-title {
+    padding-top: 0.5em;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.theme-panel-desc {
+    margin: 0 auto;
+    color: white;
+}
+
+.theme-panel-desc p {
+    text-align: justify;
+    margin: 0;
+    line-height: 25px;
+    padding-bottom: 1em;
+}
+
 /* -------------------------ABOUT SECTION ---------------------*/
 
 #about-panel {
